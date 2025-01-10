@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="es" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <%- include('includes/head') %>
+</head>
+
+<body>
+    <%- include('includes/nav') %>
+        <div class="container p-3">
+            <p class="h1 text-red text-center">Contact</p>
+            <p class="h3 text-center">Get In Touch!</p>
+
+            <form action="" class="row needs-validation">
+
+                <div class="col-6 mb-3">
+                    <label for="input1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="input1" name="email" placeholder="Enter email address*" required>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="input2" class="form-label">Phone</label>
+                    <input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" class="form-control" id="input2" placeholder="Enter phone number*" required>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="input3" class="form-label">First Name</label>
+                    <input type="text" name="firstName" maxlength="20" class="form-control" id="input3" placeholder="Enter first name*" required>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="input4" class="form-label">Last Name</label>
+                    <input type="text" name="lastName" maxlength="20" class="form-control" id="input4" placeholder="Enter last name*">
+                </div>
+
+                <div class="col-12 mb-3">
+                    <label for="Textarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" name="message" id="Textarea1" rows="3"></textarea>
+                </div>
+
+                <button class="btn btn-red">Send Message</button>
+            </form>
+        </div>
+        <%- include('includes/footer') %>
+</body>
+
+</html>

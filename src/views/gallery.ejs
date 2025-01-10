@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <%- include('includes/head') %>
+</head>
+
+<body>
+    <%- include('includes/nav') %>
+        <div class="container p-3">
+            <h1 class="text-center text-red">Our work</h1>
+            <h2 class="text-center">
+                Browse our work below, or head over to our Instagram for our latest updates!
+            </h2>
+            <h3 class="text-center">
+                <a href="https://www.instagram.com/jcpaintingcontractors/" class="text-red link-danger icon-link">
+                    Instagram<i class="bi bi-instagram"></i>
+                </a>
+            </h3>
+
+            <!-- GALLERY -->
+            <div class="row">
+
+                <div class="col-4 p-3">
+                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
+                </div>
+
+                <div class="col-4 p-3">
+                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
+                </div>
+
+                <div class="col-4 p-3">
+                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
+                </div>
+
+                <div class="col-4 p-3">
+                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
+                </div>
+
+            </div>
+        </div>
+        <%- include('includes/footer') %>
+</body>
+
+</html>

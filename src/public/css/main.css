@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.text-red{
+    color: #d23927;
+}
+
+.bg-red{
+    background-color: #d23927;
+}
+
+.btn-red{
+    background-color: #d23927;
+    color: #fff;
+}
+
+.btn-red:hover{
+    background-color: #92281c;
+    color: #fff;
+}
+
+.btn-outline-red{
+    color: #d23927;
+    border-color: #d23927;
+}
+
+.btn-outline-red:hover{
+    color: #fff;
+    background-color: #d23927;
+    border-color: #d23927;
+}
+
+.navbar-nav .nav-link.active{
+    color: #d23927;
+    font-weight: bold;
+}
+
+.ws-btn:hover{
+    width: 75px;
+    height: 75px;
+    transition: all 0.3s ease;
+}
