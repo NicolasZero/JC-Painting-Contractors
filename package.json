@@ -7,15 +7,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "nodemon --env-file=.env src/index.js"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9",
-    "tailwindcss": "^3.4.17"
+    "nodemon": "^3.1.9"
   },
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
   }
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand m-0 p-0" href="#">
             <img src="./img/logo-color-t.png" alt="Bootstrap"  height="80">
@@ -6,37 +6,38 @@
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="bi bi-list text-red"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link <% if (page === 'home') { %>active<% } %>" href="/">Home</a>
+                    <a class="nav-link nav-link-red-hover <% if (page === 'home') { %>active<% } %>" href="/">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <% if (page === 'services') { %>active<% } %>" href="/">Services</a>
+                    <a class="nav-link nav-link-red-hover <% if (page === 'services') { %>active<% } %>" href="/services">Services</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <% if (page === 'blog') { %>active<% } %>" href="/blog">Blog</a>
+                    <a class="nav-link nav-link-red-hover <% if (page === 'blog') { %>active<% } %>" href="/blog">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <% if (page === 'about') { %>active<% } %>" href="/about">About</a>
+                    <a class="nav-link nav-link-red-hover <% if (page === 'about') { %>active<% } %>" href="/about">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <% if (page === 'contact') { %>active<% } %>" href="/contact">Contact</a>
+                    <a class="nav-link nav-link-red-hover <% if (page === 'contact') { %>active<% } %>" href="/contact">Contact</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <% if (page === 'gallery') { %>active<% } %>" href="/gallery">Gallery</a>
+                    <a class="nav-link nav-link-red-hover <% if (page === 'gallery') { %>active<% } %>" href="/gallery">Gallery</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/404">404 Example</a>
+                    <a class="nav-link nav-link-red-hover" href="/404">404 Example</a>
                 </li>
 
             </ul>

@@ -1,3 +1,10 @@
+:root{
+    --color-principal: #d23927;
+    --color-principal-resaltado: #92281c;
+    --color-principal-focus: rgba(216, 92, 92, 0.514);
+    --color-secundario: #3f495a;
+
+}
 body{
     display: flex;
     flex-direction: column;
@@ -6,44 +13,77 @@ body{
 
 footer{
     margin-top: auto;
+    background-color: var(--color-secundario);
 }
 
 .text-red{
-    color: #d23927;
+    color: var(--color-principal);
+}
+
+.link-red{
+    color: var(--color-principal);
+}
+
+.link-red:hover{
+    color: var(--color-principal-resaltado);
 }
 
 .bg-red{
-    background-color: #d23927;
+    background-color: var(--color-principal);
 }
 
 .btn-red{
-    background-color: #d23927;
+    background-color: var(--color-principal);
     color: #fff;
 }
 
 .btn-red:hover{
-    background-color: #92281c;
+    background-color: var(--color-principal-resaltado);
     color: #fff;
 }
 
 .btn-outline-red{
-    color: #d23927;
-    border-color: #d23927;
+    color: var(--color-principal);
+    border-color: var(--color-principal);
 }
 
 .btn-outline-red:hover{
     color: #fff;
-    background-color: #d23927;
-    border-color: #d23927;
+    background-color: var(--color-principal);
+    border-color: var(--color-principal);
 }
 
 .navbar-nav .nav-link.active{
-    color: #d23927;
+    color: var(--color-principal);
     font-weight: bold;
+}
+
+.nav-link-red{
+    color: var(--color-principal);
+}
+
+.nav-link-red-hover:hover,.nav-link-red:hover {
+    color: var(--color-principal-resaltado);
+    text-decoration: underline;
 }
 
 .ws-btn:hover{
     width: 75px;
     height: 75px;
     transition: all 0.3s ease;
+}
+
+.nav-tabs{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--color-principal-focus);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-principal-focus);
+    border-color: var(--color-principal);
 }

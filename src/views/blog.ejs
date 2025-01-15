@@ -1,18 +1,130 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="es" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <title>
+        <%= title %>
+    </title>
     <%- include('includes/head') %>
 </head>
+
 <body>
     <%- include('includes/nav') %>
-    <div class="container p-3">
-        <h1 class="text-red text-center">Blog</h1>
+
+    <div class="row p-0 m-0">
+        <div class="col-12 col-md-6 m-0 bg-secondary d-flex justify-content-center align-items-center"
+            style="height: 60vh; min-height: 300px;">
+            <p class="h1 text-white">IMG</p>
+        </div>
+        <div class="col-12 col-md-6 m-0 p-3 p-md-5 d-flex flex-column justify-content-center align-items-center">
+            <a href="#" class="display-4 fw-bold link-red mb-3">
+                Featured blog. Example Title
+            </a>
+            <p class="lead">Description, example text: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
+                officiis dolorum
+                fugiat laboriosam perspiciatis! Saepe voluptate dolore …</p>
+        </div>
     </div>
+
+    <div class="py-3 px-md-4 px-lg-5" style="background-color: #e6e6e6;">
+        <div class="row p-0 m-0 g-0">
+
+            <div class="col-12 col-md-9 px-3 m-0">
+                <% for (let i=0; i < 3; i++){ %>
+                    <div class="bg-white mb-3">
+                        <div class="d-flex flex-md-row flex-column">
+                            <div class="text-center">
+                                <img src="img/carrusel/img3.png" height="300" width="300"
+                                    style="object-fit: cover;" alt="...">
+                            </div>
+                            <div class="p-3 p-md-5">
+                                <p>
+                                    <a href="#" class="fw-bold h2 link-red">Blog Title Example <%= i+1 %></a>
+                                </p>
+                                <p class="lead">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="blockquote-footer"><small class="text-secondary">Published on January
+                                        10</small></p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+
+            <div class="col-12 col-md-3 d-flex justify-content-center">
+                <div class="">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-red active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab"
+                                aria-controls="home-tab-pane" aria-selected="true">Popular</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link nav-link-red" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Recent</button>
+                        </li>
+                    </ul>
+                    <!-- Tap Content -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <!-- sidebar - popular -->
+                            <div class="flex-column">
+                                <div class="d-flex py-3">
+                                    <div class="">
+                                        <img src="img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                                            style="object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="p-3">
+                                        <a href="#" class="fw-bold card-title link-red">Popular blog 1</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-md-row flex-column py-3">
+                                    <div class="">
+                                        <img src="img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                                            style="object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="p-3">
+                                        <a href="#" class="fw-bold card-title link-red">Popular blog 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                            aria-labelledby="profile-tab" tabindex="0">
+                            <!-- sidebar - recent -->
+                            <div class="flex-column">
+                                <div class="d-flex py-3">
+                                    <div class="">
+                                        <img src="img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                                            style="object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="p-3">
+                                        <a href="#" class="fw-bold card-title link-red">Recent Blog 1</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-md-row flex-column py-3">
+                                    <div class="">
+                                        <img src="img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                                            style="object-fit: cover;" alt="...">
+                                    </div>
+                                    <div class="p-3">
+                                        <a href="#" class="fw-bold card-title link-red">Recent Blog 2</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <%- include('includes/footer') %>
 </body>
+
 </html>

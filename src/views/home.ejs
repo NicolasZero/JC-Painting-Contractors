@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="es" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <%= title %>
@@ -13,56 +12,78 @@
 
 <body>
     <%- include('includes/nav') %>
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="img/carrusel/img1.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="img/carrusel/img2.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="img/carrusel/img3.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
-                </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="img/carrusel/img4.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
         </div>
-        <div class="container p-3">
-            <!-- <h1 class="text-red text-center">Home</h1> -->
-            <h3 class="text-center text-red">
-                Specializing in •Commercial •Multifamily •Industrial for
-                exterior & interior repaint projects. Servicing the state of FL & beyond for over 20 years!
-            </h3>
 
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-text text-center text-red"></h5>
-                </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/carrusel/img1.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <img src="img/carrusel/img2.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <img src="img/carrusel/img3.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+                <img src="img/carrusel/img4.png" class="d-block w-100" style="min-height: 500px; height: 100vh;" alt="img">
             </div>
         </div>
-        <%- include('includes/footer') %>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container pb-5 pt-3">
+        <h1 class="text-center text-red">
+            JC Painting Contractors
+        </h1>
+        <h3>
+            Specializing in •Commercial •Multifamily •Industrial for
+            exterior & interior repaint projects. Servicing the state of FL & beyond for over 20 years!
+        </h3>
+    
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-text text-center text-red">Residential Painting</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-text text-center text-red">Commercial Painting</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-text text-center text-red">Epoxy Flooring</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('includes/footer') %>
 </body>
 
 </html>
