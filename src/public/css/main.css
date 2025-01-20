@@ -16,6 +16,10 @@ footer{
     background-color: var(--color-secundario);
 }
 
+.text-bluegray{
+    color: var(--color-secundario);
+}
+
 .text-red{
     color: var(--color-principal);
 }
@@ -86,4 +90,16 @@ footer{
 .form-control:focus {
     box-shadow: 0 0 0 0.25rem var(--color-principal-focus);
     border-color: var(--color-principal);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: rgb(233, 146, 146);
+    /* box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color); */
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--color-principal-focus);
 }

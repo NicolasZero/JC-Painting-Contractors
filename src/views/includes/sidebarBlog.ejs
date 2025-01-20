@@ -1,0 +1,67 @@
+<div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link nav-link-red active" id="home-tab" data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                aria-selected="true">Popular</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link nav-link-red" id="profile-tab" data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                aria-controls="profile-tab-pane" aria-selected="false">Recent</button>
+        </li>
+    </ul>
+    <!-- Tap Content -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+            aria-labelledby="home-tab" tabindex="0">
+            <!-- sidebar - popular -->
+            <div class="flex-column">
+                <div class="d-flex py-3 border-bottom border-light">
+                    <div class="">
+                        <img src="/img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                            style="object-fit: cover;" alt="...">
+                    </div>
+                    <div class="p-3">
+                        <a href="#" class="fw-bold card-title link-red">Popular blog 1</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-md-row flex-column py-3">
+                    <div class="">
+                        <img src="/img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                            style="object-fit: cover;" alt="...">
+                    </div>
+                    <div class="p-3">
+                        <a href="#" class="fw-bold card-title link-red">Popular blog 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+            tabindex="0">
+            <!-- sidebar - recent -->
+            <div class="flex-column">
+                <div class="d-flex py-3">
+                    <div class="">
+                        <img src="/img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                            style="object-fit: cover;" alt="...">
+                    </div>
+                    <div class="p-3">
+                        <a href="#" class="fw-bold card-title link-red">Recent Blog 1</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-md-row flex-column py-3">
+                    <div class="">
+                        <img src="/img/carrusel/img3.png" height="50" width="50" class="rounded-circle"
+                            style="object-fit: cover;" alt="...">
+                    </div>
+                    <div class="p-3">
+                        <a href="#" class="fw-bold card-title link-red">Recent Blog 2</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

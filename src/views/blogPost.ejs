@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= data.title %>
+    </title>
+    <%- include('includes/head') %>
+</head>
+
+<body>
+    <%- include('includes/nav') %>
+        <div class="row">
+            <div class="col-12 col-md-9 px-md-4 m-0">
+                <%- include(`blogs/blog${data.id}`) %>
+            </div>
+
+            <div class="col-12 col-md-3 d-flex justify-content-center pt-md-5 pt-2" style="background-color: #e6e6e6;">
+                <%- include(`includes/sidebarBlog`) %>
+            </div>
+        </div>
+
+        <%- include('includes/footer') %>
+</body>
+
+</html>
