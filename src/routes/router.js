@@ -10,6 +10,7 @@ router.get("/contact", controller.contact)
 router.get("/gallery", controller.gallery)
 router.get("/about", controller.about)
 router.get("/blog", controller.blog)
+router.get("/blog/p/:p?", controller.blog)
 router.get("/blog/:id", controller.blogPost)
 // 404
 router.get('*', (req, res) => {res.render('404', {title: 'Page no found'})})

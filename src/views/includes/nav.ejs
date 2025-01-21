@@ -1,53 +1,55 @@
 <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand m-0 p-0" href="#">
-            <img src="/img/logo-color-t.png" alt="Bootstrap"  height="80">
-        </a>
+        <span class="navbar-brand m-0 p-0">
+            <img src="/img/logo-color-t.png" alt="JC Painting Contractors"  height="80">
+        </span>
+
+        <a class="btn btn-outline-primary d-block d-md-none" href="tel:+584141074743"><i class="bi bi-telephone-fill"></i> Call us</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="bi bi-list text-red"></i>
+            <i class="bi bi-list"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'home') { %>active<% } %>" href="/">Home</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'home') { %>active<% } %>" href="/">Home</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'services') { %>active<% } %>" href="/services">Services</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'services') { %>active<% } %>" href="/services">Services</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'blog') { %>active<% } %>" href="/blog">Blog</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'blog') { %>active<% } %>" href="/blog">Blog</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'about') { %>active<% } %>" href="/about">About</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'about') { %>active<% } %>" href="/about">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'contact') { %>active<% } %>" href="/contact">Contact</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'contact') { %>active<% } %>" href="/contact">Contact</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'gallery') { %>active<% } %>" href="/gallery">Gallery</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'gallery') { %>active<% } %>" href="/gallery">Gallery</a>
                 </li>
 
                 <!-- example -->
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover <% if (page === 'booking') { %>active<% } %>" href="/about">Booking</a>
+                    <a class="nav-link nav-link-hover <% if (page === 'booking') { %>active<% } %>" href="/about">Booking</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-red-hover" href="/404">404 Example</a>
+                    <a class="nav-link nav-link-hover" href="/404">404 Example</a>
                 </li>
 
             </ul>
-            <a class="btn btn-outline-red" href="tel:+584141074743">+58 412-7848-101</a>
+            <a class="btn btn-outline-primary d-none d-md-block" href="tel:+584141074743">+58 412-7848-101</a>
         </div>
     </div>
 </nav>

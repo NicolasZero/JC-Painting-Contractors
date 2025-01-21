@@ -9,6 +9,10 @@ const home = (req, res) => {
 }
 
 const blog = (req, res) => {
+    let p = 1
+    if (req.params.p && Number(req.params.p)) {
+        p = req.params.p
+    }
     // Define la ruta del archivo json
     const pathRouter = join(__dirname,"..","data","blogs.json")
     
@@ -33,7 +37,7 @@ const blog = (req, res) => {
         })
 
         // renderiza la vista
-        return res.render('blog', {title: 'JC Painting Contractors',data:blog.blogs,page:"blog"})
+        return res.render('blog', {title: 'JC Painting Contractors',data:blog.blogs,page:"blog",p})
     })
 }
 
