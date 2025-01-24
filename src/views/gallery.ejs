@@ -8,43 +8,67 @@
         <%= title %>
     </title>
     <%- include('includes/head') %>
+        <style>
+            .gallery {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 300px);
+                gap: 20px;
+                /* padding: 10px; */
+            }
+
+            @media (width < 800px) {
+                .gallery {
+                    gap: 10px;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(4, 200px);
+                }
+            }
+
+            .gallery .box:nth-child(1) {
+                grid-column-start: span 2;
+            }
+
+            .gallery .box:nth-child(2) {
+                grid-row-start: span 2;
+            }
+        </style>
 </head>
 
 <body>
     <%- include('includes/nav') %>
-        <div class="container p-3">
-            <h1 class="text-center text-red">Our work</h1>
-            <h2 class="text-center">
+
+        <div class="text-center py-3">
+            <h1 class="text-primary">Our work</h1>
+            <p class="fs-3">
                 Browse our work below, or head over to our Instagram for our latest updates!
-            </h2>
-            <h3 class="text-center">
-                <a href="https://www.instagram.com/jcpaintingcontractors/" class="text-red link-danger icon-link">
-                    Instagram<i class="bi bi-instagram"></i>
-                </a>
-            </h3>
-
-            <!-- GALLERY -->
-            <div class="row">
-
-                <div class="col-4 p-3">
-                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
-                </div>
-
-                <div class="col-4 p-3">
-                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
-                </div>
-
-                <div class="col-4 p-3">
-                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
-                </div>
-
-                <div class="col-4 p-3">
-                    <img src="img/carrusel/img1.png" class="img-fluid rounded" alt="Gallery">
-                </div>
-
-            </div>
+            </p>
+            <a href="https://www.instagram.com/jcpaintingcontractors/" class=" icon-link display-6 fw-normal">
+                Instagram<i class="bi bi-instagram"></i>
+            </a>
         </div>
-        <%- include('includes/footer') %>
+
+
+        <!-- GALLERY -->
+        <div class="gallery p-3">
+            <% data.forEach(gallery=> { %>
+                <a class="box animation text-decoration-none rounded-end-4 rounded-bottom-4" href="#" 
+                style="background-image: url('<%= gallery.image %>'); background-size: cover; background-position: center;">
+                <!-- <a href="#" class="link-light text-decoration-none fs-5"> -->
+                        <div class="text-center text-white display-6 mt-3 rounded-end blur" style="width: 70%;">
+                            <%= gallery.category %>
+                        </div>
+                    <!-- </a> -->
+                    <!-- </div> -->
+                </a>
+        <% }) %>
+            </div>
+
+            <%- include('includes/footer') %>
 </body>
 
 </html>

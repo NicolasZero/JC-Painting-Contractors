@@ -13,7 +13,7 @@
 <body>
     <%- include('includes/nav') %>
         <div class="container p-3">
-            <h1 class="h2 text-center text-red fw-normal">Get In Touch!</h1>
+            <h1 class="h2 text-center text-primary fw-normal">Get In Touch!</h1>
 
             <form action="" class="row needs-validation form-floating" method="post" novalidate>
                 <!-- Email -->
@@ -25,6 +25,9 @@
                         <div class="valid-feedback">
                             Looks good!
                         </div>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address
+                        </div>
                     </div>
                 </div>
 
@@ -33,12 +36,12 @@
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="Phone" name="Phone"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="000-000-0000" required>
-                        <label for="Phone">Phone</label>
+                        <label for="Phone">Phone <span class="text-muted">(000-000-0000)</span></label>
                         <div class="valid-feedback">
                             Looks good!
                         </div>
                         <div class="invalid-feedback">
-                            Please enter your phone number in the format 000-000-0000.
+                            Please enter your phone number in the format 000-000-0000
                         </div>
                     </div>
                 </div>
@@ -49,9 +52,12 @@
                         <input type="text" class="form-control" id="firstName" name="firstName"
                             placeholder="Enter first name" required>
                         <label for="firstName">First Name</label>
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter a first name
+                        </div>
                     </div>
                 </div>
 
@@ -61,21 +67,27 @@
                         <input type="text" class="form-control" id="lastName" name="lastName"
                             placeholder="Enter last name" required>
                         <label for="lastName">Last Name</label>
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter a last name
+                        </div>
                     </div>
                 </div>
 
                 <!-- Message -->
                 <div class="col-12">
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" name="message" maxlength="300"
+                        <textarea class="form-control" id="message" name="message" minlength="15" maxlength="300"
                             placeholder="Enter message" style="height: 100px" required></textarea>
                         <label for="message">Message</label>
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter a message, at least 15 characters
+                        </div>
                     </div>
                 </div>
 

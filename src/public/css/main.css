@@ -1,3 +1,4 @@
+/* hacer que el footer se vea abajo */
 body{
     display: flex;
     flex-direction: column;
@@ -10,31 +11,33 @@ footer{
     background-color: #3f495a;
 }
 
-/* navbar toggler button */
-.navbar-toggler{
-    color: var(--bs-primary);
-    border-color: rgba(var(--bs-primary-rgb), 0.25);
-}
-.navbar-toggler:active{
-    background-color: var(--bs-primary);
-    color: #fff;
-}
-.navbar-toggler:focus {
-    text-decoration: none;
-    outline: 0;
-    box-shadow: var(--bs-primary-box-shadow);
-}
-
 /* active */
 .navbar-nav .nav-link.active,.nav-link.active{
     font-weight: bold;
+    color: var(--bs-primary) !important;
 }
 
 /* hover */
 .nav-link-hover:hover{
     text-decoration: underline;
+    color: var(--bs-primary) !important;
 }
 
+/* tabs */
 .nav-tabs{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    resize: vertical;
+}
+
+.blur{
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.blur:hover{
+    background-color: rgba(0, 0, 0, 0.5);
 }

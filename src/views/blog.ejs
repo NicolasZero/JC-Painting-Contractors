@@ -37,7 +37,7 @@
                     const page = (Number(p) > numberPage) ? numberPage : Number(p)
                 %>
                 <% for (let i = (limit * (page - 1)); i < limit * page; i++) { const blog = data[i]; if(blog){%>
-                    <div class="bg-white mb-3">
+                    <div class="bg-white mb-3 animation">
                         <div class="d-flex flex-md-row flex-column">
                             <div class="text-center">
                                 <img src="<%= blog.image ? blog.image : '/img/blogs/blog1.jpg' %>" height="300"

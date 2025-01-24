@@ -1,0 +1,29 @@
+{
+    "gallery": [
+        {
+            "id": 1,
+            "category": "Gallery 1",
+            "image": "/img/carrusel/img1.png"
+        },
+        {
+            "id": 2,
+            "category": "Gallery 2",
+            "image": "/img/carrusel/img3.png"
+        },
+        {
+            "id": 3,
+            "category": "Gallery 3",
+            "image": "/img/carrusel/img2.png"
+        },
+        {
+            "id": 4,
+            "category": "Gallery 4",
+            "image": "/img/carrusel/img4.png"
+        },
+        {
+            "id": 5,
+            "category": "Gallery 5",
+            "image": "/img/services/img1.jpg"
+        }
+    ]
+}
