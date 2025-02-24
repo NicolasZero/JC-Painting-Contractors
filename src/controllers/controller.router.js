@@ -20,7 +20,7 @@ const blog = (req, res) => {
     fs.readFile(pathRouter, 'utf8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo', err)
-            return res.render('404', {title: 'Page no found'})
+            return res.render('500', {title: 'Error 500'})
         }
 
         const blog = JSON.parse(data).blogs
@@ -54,7 +54,7 @@ const blogPost = (req, res) => {
     fs.readFile(path, 'utf8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo', err)
-            return res.render('404', {title: 'Page no found'})
+            return res.render('500', {title: 'Error 500'})
         }
         
         const blog = JSON.parse(data).blogs
@@ -103,7 +103,7 @@ const gallery = (req, res) => {
     fs.readFile(pathRouter, 'utf8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo', err)
-            return res.render('404', {title: 'Page no found'})
+            return res.render('500', {title: 'Error 500'})
         }
         
         const gallery = JSON.parse(data).gallery

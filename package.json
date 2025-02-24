@@ -3,20 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "Nicolas",
+  "author": "NicolasZero",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon --env-file=.env src/index.js"
+    "dev": "node --watch src/index.js",
+    "nodemon": "nodemon --env-file=.env src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicolasZero/JC-Painting-Contractors.git"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
   },
   "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "fs": "^0.0.1-security",
-    "nodemailer": "^6.9.16"
+    "ejs": "3.1.10",
+    "express": "4.21.2",
+    "fs": "0.0.1-security"
   }
 }
